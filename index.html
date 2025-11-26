@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunicum.ge | Digital Engineers of the Georgian Market</title>
+    <title>Comunicum.ge | Strategy, Digital, Experience</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* --- CUSTOM TAILWIND CONFIG & COLORS --- */
@@ -11,13 +11,12 @@
             theme: {
                 extend: {
                     colors: {
-                        'neon-blue': '#4F46E5', /* Deep Electric Blue */
-                        'neon-green': '#10B981', /* Bright Green Accent */
-                        'bg-dark': '#0B101F', /* Ultra Deep Charcoal */
-                        'bg-glass-base': 'rgba(11, 16, 31, 0.8)', /* Transparent dark base */
+                        'accent-violet': '#A78BFA', /* Modern Violet */
+                        'accent-gold': '#FBBF24', /* Sleek Gold/Amber */
+                        'bg-dark': '#0A0A0F', /* Near-Black Base */
                     },
                     borderRadius: {
-                        '3xl': '1.5rem', 
+                        '4xl': '2rem', /* More fluid rounding */
                     },
                     fontFamily: {
                         'mono': ['Space Mono', 'monospace'],
@@ -26,155 +25,156 @@
                 }
             }
         }
-        /* Custom gradient for the hero text */
-        .neon-gradient-text {
-            background-image: linear-gradient(to right, #4F46E5, #10B981);
+        /* Custom gradient for the hero text (Gold to Violet) */
+        .fluid-gradient-text {
+            background-image: linear-gradient(to right, #FBBF24, #A78BFA);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
-        /* --- GLASSMORHISM EFFECT --- */
-        .glass-effect {
-            background-color: rgba(79, 70, 229, 0.15); /* Low opacity Neon Blue */
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(79, 70, 229, 0.4);
-            -webkit-backdrop-filter: blur(12px); /* Safari support */
-            transition: all 0.3s ease-in-out;
+        /* --- AQUEOUS GLASSMORHISM EFFECT --- */
+        .glass-card {
+            background-color: rgba(167, 139, 250, 0.05); /* Very light Violet opacity */
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(251, 191, 36, 0.2); /* Soft Gold border */
+            -webkit-backdrop-filter: blur(15px); 
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease-in-out;
         }
-        .glass-effect:hover {
-            background-color: rgba(79, 70, 229, 0.3);
-            border-color: #10B981; /* Green hover accent */
+        .glass-card:hover {
+            border-color: #A78BFA;
+            background-color: rgba(167, 139, 250, 0.1);
         }
-        
+
         .nav-glass {
-            background-color: rgba(11, 16, 31, 0.85);
+            background-color: rgba(10, 10, 15, 0.85);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
         }
 
-        .hero-bg-tech {
-            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.1) 0%, rgba(11, 16, 31, 1) 70%);
+        .hero-bg-fluid {
+            background: radial-gradient(circle at top, rgba(167, 139, 250, 0.05) 0%, rgba(10, 10, 15, 1) 70%);
         }
     </style>
 </head>
 <body class="bg-bg-dark text-gray-50 font-sans">
 
-    <nav class="nav-glass sticky top-0 z-50 shadow-2xl shadow-black/50">
+    <nav class="nav-glass sticky top-0 z-50 shadow-lg shadow-black/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="#" class="text-3xl font-black text-neon-green tracking-tight font-mono">COMUNICUM<span class="text-neon-blue">.GE</span></a>
+                <a href="#" class="text-3xl font-black text-accent-gold tracking-tight font-mono">COMUNICUM<span class="text-accent-violet">.GE</span></a>
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="#services" class="text-gray-300 hover:text-neon-green font-medium transition">Modules</a>
-                    <a href="#manifesto" class="text-gray-300 hover:text-neon-green font-medium transition">Manifesto</a>
-                    <a href="#work" class="text-gray-300 hover:text-neon-green font-medium transition">Case Files</a>
-                    <a href="#contact" class="px-5 py-2 rounded-xl font-bold shadow-lg glass-effect text-neon-green">
-                        Project Initiation
+                    <a href="#strategy" class="text-gray-300 hover:text-accent-violet font-medium transition">Strategy</a>
+                    <a href="#digital" class="text-gray-300 hover:text-accent-violet font-medium transition">Digital Flow</a>
+                    <a href="#experiential" class="text-gray-300 hover:text-accent-violet font-medium transition">Experience</a>
+                    <a href="#contact" class="px-5 py-2 rounded-xl font-bold shadow-lg glass-card text-accent-gold hover:text-white">
+                        Connect Now
                     </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="hero-bg-tech flex items-center justify-center text-center px-4 py-32 md:py-48 border-b border-gray-800">
+    <section class="hero-bg-fluid flex items-center justify-center text-center px-4 py-32 md:py-48 border-b border-gray-800">
         <div class="max-w-6xl">
-            <h1 class="text-6xl md:text-8xl font-black mb-6 uppercase tracking-tight font-mono neon-gradient-text">
-                WE ARE THE ARCHITECTS OF INFLUENCE.
+            <h1 class="text-6xl md:text-8xl font-black mb-6 uppercase tracking-tight font-mono fluid-gradient-text">
+                THE GEORGIAN MARKET IS FLUID. WE ARE THE FLOW.
             </h1>
             <p class="text-xl text-gray-400 mb-10 max-w-3xl mx-auto font-light">
-                Comunicum is Georgia’s full-stack communications powerhouse. We engineer platforms, narratives, and market movements—not just campaigns.
+                Comunicum delivers integrated communication engineering. From strategic advisory to physical presence and high-stakes corporate events.
             </p>
-            <a href="#contact" class="px-10 py-4 text-xl font-bold rounded-2xl glass-effect text-neon-green shadow-xl shadow-neon-blue/30">
-                INITIATE PROJECT LAUNCH &rarr;
+            <a href="#contact" class="px-10 py-4 text-xl font-bold rounded-2xl glass-card text-accent-gold shadow-xl shadow-accent-violet/30 hover:text-white">
+                START CONSULTATION &rarr;
             </a>
         </div>
     </section>
 
-    <section id="manifesto" class="py-24 bg-bg-dark">
+    <section id="strategy" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-neon-blue font-bold tracking-widest uppercase text-sm mb-2">The Communicum Manifesto</h2>
-                    <h3 class="text-4xl font-extrabold text-gray-50 mb-6">Why Settle for Agency When You Can Have Engine?</h3>
-                    <p class="text-lg text-gray-400 mb-6">
-                        We operate beyond traditional PR and Marketing. In the rapidly evolving Georgian market, fragmented services are a liability. We provide a **unified 360° communications engine** that operates with military precision.
-                    </p>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start"><span class="text-neon-green mr-3 mt-1 text-xl">✓</span> Data-First Strategy: Every move is quantified.</li>
-                        <li class="flex items-start"><span class="text-neon-green mr-3 mt-1 text-xl">✓</span> End-to-End Ownership: From Code to Campaign, all in-house.</li>
-                        <li class="flex items-start"><span class="text-neon-green mr-3 mt-1 text-xl">✓</span> Unmatched Scale: We handle national and governmental projects.</li>
-                    </ul>
-                </div>
-                <div class="p-8 bg-bg-glass-base border border-neon-blue/40 rounded-3xl shadow-2xl glass-effect">
-                    <h4 class="text-2xl font-bold text-neon-green mb-6">Impact Metrics (Q3 2025)</h4>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div><p class="text-4xl font-mono font-bold text-gray-50">150%</p><p class="text-gray-400">Average Client Growth</p></div>
-                        <div><p class="text-4xl font-mono font-bold text-gray-50">4.8M+</p><p class="text-gray-400">Total Audience Reach</p></div>
-                        <div><p class="text-4xl font-mono font-bold text-gray-50">98%</p><p class="text-gray-400">Campaign Success Rate</p></div>
-                        <div><p class="text-4xl font-mono font-bold text-gray-50">1200 m²</p><p class="text-gray-400">Event Space Managed</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="services" class="py-24 bg-gray-900 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-neon-blue font-bold tracking-widest uppercase text-sm mb-2">The Communicum Ecosystem</h2>
-                <h3 class="text-4xl font-extrabold text-gray-50">Our Modules of Influence</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">🖥️</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">Digital Engineering</h4><p class="text-gray-400">Full-stack web architecture, e-commerce development, and performance optimization. We build platforms that scale to millions.</p></div>
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">📡</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">Influence Protocol (PR)</h4><p class="text-gray-400">Media domination, government relations, and aggressive market entry campaigns. We control the narrative across Georgia and the world.</p></div>
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">🧬</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">Brand DNA Injection</h4><p class="text-gray-400">From identity matrix design to printed materials. Your brand is not just a logo—it's code that dictates consumer behavior.</p></div>
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">🌐</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">SMM & Community</h4><p class="text-gray-400">Social media, engagement metrics, and trend forecasting powered by AI insights. We don't post, we propagate.</p></div>
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">🚀</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">Experiential Hacking</h4><p class="text-gray-400">Event management designed for maximum buzz. Product launches, corporate summits, and high-stakes media events.</p></div>
-                <div class="p-8 bg-bg-dark border border-gray-700 rounded-3xl shadow-2xl hover:border-neon-green transition duration-300"><div class="text-4xl text-neon-green mb-4">📊</div><h4 class="text-2xl font-bold mb-3 text-neon-blue">Marketing Campaigns</h4><p class="text-gray-400">Data-driven, full-funnel marketing campaigns that guarantee market share expansion and measurable ROI.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="work" class="py-24 bg-bg-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-neon-blue font-bold tracking-widest uppercase text-sm mb-2 text-center">Case Files: Proof of Concept</h2>
-            <h3 class="text-4xl font-extrabold text-gray-50 mb-12 text-center">Our Recent Engagements in Georgia</h3>
+            <h2 class="text-accent-violet font-bold tracking-widest uppercase text-sm mb-2 text-center">Pillar I: Strategy & Consulting</h2>
+            <h3 class="text-4xl font-extrabold text-gray-50 mb-12 text-center">The Blueprint for Dominance</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 hover:shadow-neon-blue/50 shadow-xl transition">
-                    <p class="text-neon-green text-sm mb-2">Project: National E-Gov Platform</p>
-                    <h4 class="text-xl font-bold mb-4">Digital Identity Re-Architecture</h4>
-                    <p class="text-gray-400">Developed a secure, high-speed digital presence for a key governmental body, reducing citizen wait times by **65%** and achieving compliance with EU standards.</p>
+                <div class="p-8 rounded-4xl glass-card"><div class="text-4xl text-accent-gold mb-4">🧠</div><h4 class="text-2xl font-bold mb-3 text-accent-violet">Market Strategy</h4><p class="text-gray-400">Full marketing and PR strategy development, market analysis, and brand positioning.</p></div>
+                <div class="p-8 rounded-4xl glass-card"><div class="text-4xl text-accent-gold mb-4">💬</div><h4 class="text-2xl font-bold mb-3 text-accent-violet">PR Campaign Execution</h4><p class="text-gray-400">High-impact media relations, lobbying, crisis management, and reputation architecture.</p></div>
+                <div class="p-8 rounded-4xl glass-card"><div class="text-4xl text-accent-gold mb-4">🤝</div><h4 class="text-2xl font-bold mb-3 text-accent-violet">Executive Consultation</h4><p class="text-gray-400">Direct, confidential advisory for executive teams on communication challenges and expansion.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infographics" class="py-24 bg-gray-900 border-t border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-accent-gold font-bold tracking-widest uppercase text-sm mb-2 text-center">Data in Motion</h2>
+            <h3 class="text-4xl font-extrabold text-gray-50 mb-12 text-center">The Metrics We Master</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="p-6 bg-bg-dark rounded-3xl glass-card">
+                    <div class="w-full h-40 flex items-center justify-center text-accent-violet text-xl border border-dashed border-gray-700">
+                        [Animated Graph Placeholder: Audience Growth %]
+                    </div>
+                    <p class="mt-4 text-gray-400 font-bold">+170% Digital Footprint (YTD)</p>
                 </div>
-                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 hover:shadow-neon-blue/50 shadow-xl transition">
-                    <p class="text-neon-green text-sm mb-2">Project: Major Fintech Entry</p>
-                    <h4 class="text-xl font-bold mb-4">Aggressive Market Penetration PR</h4>
-                    <p class="text-gray-400">Executed a six-month campaign for a multinational fintech client, securing **180+** high-tier media mentions and capturing **15%** of the target market share.</p>
+                <div class="p-6 bg-bg-dark rounded-3xl glass-card">
+                    <div class="w-full h-40 flex items-center justify-center text-accent-violet text-xl border border-dashed border-gray-700">
+                        [Animated Pie Chart Placeholder: Media Share %]
+                    </div>
+                    <p class="mt-4 text-gray-400 font-bold">95% Positive Media Sentiment</p>
                 </div>
-                <div class="bg-gray-900 border border-gray-800 rounded-3xl p-6 hover:shadow-neon-blue/50 shadow-xl transition">
-                    <p class="text-neon-green text-sm mb-2">Project: Tbilisi Tech Summit</p>
-                    <h4 class="text-xl font-bold mb-4">Full-Scale Event & Digital Hosting</h4>
-                    <p class="text-gray-400">Managed all logistics, media relations, and digital ticketing for the largest annual technology conference in the Caucasus region (Attendance: **7,500+**).</p>
+                <div class="p-6 bg-bg-dark rounded-3xl glass-card">
+                    <div class="w-full h-40 flex items-center justify-center text-accent-violet text-xl border border-dashed border-gray-700">
+                        [Animated Data Stream Placeholder: ROI Metric]
+                    </div>
+                    <p class="mt-4 text-gray-400 font-bold">2.5X Avg. Campaign ROI</p>
+                </div>
+            </div>
+            <p class="mt-12 text-center text-gray-500 italic">**Note:** Placeholder boxes indicate where interactive, flowing data visualizations will be implemented.</p>
+        </div>
+    </section>
+
+    <section id="digital" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-accent-violet font-bold tracking-widest uppercase text-sm mb-2 text-center">Pillars II & III: Execution & Presence</h2>
+            <h3 class="text-4xl font-extrabold text-gray-50 mb-12 text-center">Digital Flow, Physical Impact, & Corporate Experience</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="p-10 rounded-4xl glass-card">
+                    <h4 class="text-3xl font-bold text-accent-gold mb-6">Digital & Broadcast Media</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Web & SEO:** Custom high-speed websites and technical SEO optimization.</li>
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Social Media:** Comprehensive SMM strategy and execution across all key platforms.</li>
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Digital Advertising:** Programmatic and targeted advertising (PPC/Display).</li>
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Television & Media:** Strategic broadcast placement and media buying across Georgian channels.</li>
+                    </ul>
+                </div>
+                
+                <div class="p-10 rounded-4xl glass-card">
+                    <h4 class="text-3xl font-bold text-accent-gold mb-6">Physical & Experiential Presence</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Advertising & OOH:** Billboard placement, posters, and outdoor media campaigns.</li>
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Branding Materials:** Full corporate identity, marketing collateral, and branded content creation.</li>
+                        <li class="flex items-start"><span class="text-accent-violet mr-3 mt-1 text-xl">→</span> **Corporate Event Management:** Presentations, anniversaries, high-level meetings, team-buildings, sports events, and adventure activities. **(Strictly Corporate, No Private Events)**</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="bg-gray-900 text-white py-24 border-t border-neon-green/30">
+    <section id="contact" class="bg-gray-900 text-white py-24 border-t border-accent-violet/30">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-                <h3 class="text-4xl font-bold text-neon-green mb-4">Initiate Dialogue.</h3>
-                <p class="text-gray-400 mb-8">We are selective. Tell us about your goal, not just your budget.</p>
+                <h3 class="text-4xl font-bold text-accent-gold mb-4">Secure Your Communication Flow.</h3>
+                <p class="text-gray-400 mb-8">Ready to define the next phase of your market dominance? Reach out to our executive strategy team.</p>
                 <div class="space-y-4">
-                    <p class="flex items-center"><span class="font-bold w-20 text-neon-blue">Email:</span> <a href="mailto:info@comunicum.ge" class="hover:text-neon-green">info@comunicum.ge</a></p>
-                    <p class="flex items-center"><span class="font-bold w-20 text-neon-blue">Office:</span> Tbilisi Digital Hub, Georgia</p>
+                    <p class="flex items-center"><span class="font-bold w-20 text-accent-violet">Email:</span> <a href="mailto:info@comunicum.ge" class="hover:text-accent-gold">info@comunicum.ge</a></p>
+                    <p class="flex items-center"><span class="font-bold w-20 text-accent-violet">Office:</span> Tbilisi, Georgia</p>
                 </div>
             </div>
             <form class="space-y-4">
-                <input type="text" placeholder="Project Name / Company" class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-neon-green">
-                <input type="email" placeholder="Contact Email (Encrypted)" class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-neon-green">
-                <textarea rows="4" placeholder="Describe the scope of dominance you require..." class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-neon-green"></textarea>
-                <button class="w-full px-5 py-3 text-lg font-bold rounded-xl glass-effect text-neon-green shadow-xl shadow-neon-blue/30 uppercase">
-                    Submit Encryption Request
+                <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-accent-violet">
+                <input type="email" placeholder="Contact Email" class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-accent-violet">
+                <textarea rows="4" placeholder="Describe the scale of the challenge..." class="w-full p-4 bg-gray-800 border border-gray-700 text-white rounded-xl focus:outline-none focus:border-accent-violet"></textarea>
+                <button class="w-full px-5 py-3 text-lg font-bold rounded-xl glass-card text-accent-gold hover:text-white uppercase">
+                    Submit Flow Request
                 </button>
             </form>
         </div>
